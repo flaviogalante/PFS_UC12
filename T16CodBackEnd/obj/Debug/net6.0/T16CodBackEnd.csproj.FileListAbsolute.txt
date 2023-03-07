@@ -1,0 +1,15 @@
+C:\Documentos\Tecnologia da Informação\SENAI\Turma 16 - PFS\T16CodBackEnd\bin\Debug\net6.0\T16CodBackEnd.exe
+C:\Documentos\Tecnologia da Informação\SENAI\Turma 16 - PFS\T16CodBackEnd\bin\Debug\net6.0\T16CodBackEnd.deps.json
+C:\Documentos\Tecnologia da Informação\SENAI\Turma 16 - PFS\T16CodBackEnd\bin\Debug\net6.0\T16CodBackEnd.runtimeconfig.json
+C:\Documentos\Tecnologia da Informação\SENAI\Turma 16 - PFS\T16CodBackEnd\bin\Debug\net6.0\T16CodBackEnd.dll
+C:\Documentos\Tecnologia da Informação\SENAI\Turma 16 - PFS\T16CodBackEnd\bin\Debug\net6.0\T16CodBackEnd.pdb
+C:\Documentos\Tecnologia da Informação\SENAI\Turma 16 - PFS\T16CodBackEnd\obj\Debug\net6.0\T16CodBackEnd.csproj.AssemblyReference.cache
+C:\Documentos\Tecnologia da Informação\SENAI\Turma 16 - PFS\T16CodBackEnd\obj\Debug\net6.0\T16CodBackEnd.GeneratedMSBuildEditorConfig.editorconfig
+C:\Documentos\Tecnologia da Informação\SENAI\Turma 16 - PFS\T16CodBackEnd\obj\Debug\net6.0\T16CodBackEnd.AssemblyInfoInputs.cache
+C:\Documentos\Tecnologia da Informação\SENAI\Turma 16 - PFS\T16CodBackEnd\obj\Debug\net6.0\T16CodBackEnd.AssemblyInfo.cs
+C:\Documentos\Tecnologia da Informação\SENAI\Turma 16 - PFS\T16CodBackEnd\obj\Debug\net6.0\T16CodBackEnd.csproj.CoreCompileInputs.cache
+C:\Documentos\Tecnologia da Informação\SENAI\Turma 16 - PFS\T16CodBackEnd\obj\Debug\net6.0\T16CodBackEnd.dll
+C:\Documentos\Tecnologia da Informação\SENAI\Turma 16 - PFS\T16CodBackEnd\obj\Debug\net6.0\refint\T16CodBackEnd.dll
+C:\Documentos\Tecnologia da Informação\SENAI\Turma 16 - PFS\T16CodBackEnd\obj\Debug\net6.0\T16CodBackEnd.pdb
+C:\Documentos\Tecnologia da Informação\SENAI\Turma 16 - PFS\T16CodBackEnd\obj\Debug\net6.0\T16CodBackEnd.genruntimeconfig.cache
+C:\Documentos\Tecnologia da Informação\SENAI\Turma 16 - PFS\T16CodBackEnd\obj\Debug\net6.0\ref\T16CodBackEnd.dll
