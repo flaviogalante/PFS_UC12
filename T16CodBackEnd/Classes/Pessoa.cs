@@ -4,7 +4,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using T16CodBackEnd.Interfaces;
 
-
 namespace T16CodBackEnd.Classes
 {
     public abstract class Pessoa : IPessoa
@@ -14,9 +13,7 @@ namespace T16CodBackEnd.Classes
         public float rendimento { get; set; }
 
 
-        public float CalcularImposto(float rendimento)
-        {
-            throw new NotImplementedException();
-        }
+        public abstract float CalcularImposto(float rendimento);
+        
     }
 }
