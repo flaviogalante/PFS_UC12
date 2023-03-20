@@ -5,7 +5,7 @@ using T16CodBackEnd.Classes;
 
 // metodo construtor
 PessoaFisica novaPf = new PessoaFisica();
-PessoaJuridica novaPj = new PessoaJuridica();
+// 
 
 //novaPf.nome = "Adriano";
 //novaPf.cpf = 1112223345;
@@ -36,22 +36,53 @@ PessoaJuridica novaPj = new PessoaJuridica();
 
 // Encontro-Remoto-4
 
-DateTime datNascimento = new DateTime(1984,10,19);
+// DateTime datNascimento = new DateTime(1984,10,19);
 
-DateTime date1 = DateTime.Now;
-DateTime date2 = DateTime.UtcNow;
-DateTime date3 = DateTime.Today;
+// DateTime date1 = DateTime.Now;
+// DateTime date2 = DateTime.UtcNow;
+// DateTime date3 = DateTime.Today;
 
-var dataResult = date3 - datNascimento;
+// var dataResult = date3 - datNascimento;
 
-var idade = dataResult.TotalDays/365;
+// var idade = dataResult.TotalDays/365;
 
 
-Console.WriteLine(date1);
-Console.WriteLine(date2);
-Console.WriteLine(date3);
+// Console.WriteLine(date1);
+// Console.WriteLine(date2);
+// Console.WriteLine(date3);
 
-Console.WriteLine(novaPf.ValidarDataNasc(datNascimento));
-Console.WriteLine(novaPf.ValidarDataNasc("19-10-1984"));
+// Console.WriteLine(novaPf.ValidarDataNasc(datNascimento));
+// Console.WriteLine(novaPf.ValidarDataNasc("19-10-1984"));
 
 // Fim do Encontro-Remoto-4
+
+// Encontro-Remoto-5
+
+// PESSOA JURÍDICA
+
+PessoaJuridica novaPj = new PessoaJuridica();
+
+// Console.WriteLine(novaPj.ValidarCnpj("27379542000173"));
+// Console.WriteLine(novaPj.ValidarCnpj("31.876.411/0001-79"));
+
+Endereco novoEndPj = new Endereco();
+
+novaPj.razaoSocial = "Flavio Machado - ME";
+novaPj.cnpj = "31.876.411/0001-79";
+novaPj.rendimento = 200000.00f;
+
+novoEndPj.logradouro = "Rua Copacabana";
+novoEndPj.numero = 354;
+novoEndPj.complemento = "Empresa de Informática";
+novoEndPj.endComercial = true;
+
+novaPj.endereco = novoEndPj;
+
+Console.WriteLine(@$"
+
+Nome da Razão Social: {novaPj.razaoSocial}
+Endereço: {novoEndPj.logradouro}, {novoEndPj.numero}
+CNPJ: {novaPj.cnpj} - Valido: {novaPj.ValidarCnpj(novaPj.cnpj)} 
+");
+
+// Fim do Encontro-Remoto-5
