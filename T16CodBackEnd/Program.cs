@@ -46,7 +46,7 @@ var idade = dataResult.TotalDays/365;
 
 if(idade > 30 )
     {
-        Console.WriteLine("Parabéns você tem desconto no seu seguro");
+        Console.WriteLine("Parabéns você tem desconto");
     }
 
 Console.WriteLine(date1);
