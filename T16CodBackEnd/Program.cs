@@ -34,6 +34,8 @@ PessoaJuridica novaPj = new PessoaJuridica();
 //Console.WriteLine($"O imposto a pagar será de: {impostoPagar.ToString("C")}");
 
 
+// Encontro-Remoto-4
+
 DateTime datNascimento = new DateTime(1984,10,19);
 
 DateTime date1 = DateTime.Now;
@@ -44,12 +46,12 @@ var dataResult = date3 - datNascimento;
 
 var idade = dataResult.TotalDays/365;
 
-if(idade > 30 )
-    {
-        Console.WriteLine("Parabéns você tem desconto");
-    }
 
 Console.WriteLine(date1);
 Console.WriteLine(date2);
+Console.WriteLine(date3);
 
 Console.WriteLine(novaPf.ValidarDataNasc(datNascimento));
+Console.WriteLine(novaPf.ValidarDataNasc("19-10-1984"));
+
+// Fim do Encontro-Remoto-4
