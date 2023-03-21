@@ -14,7 +14,9 @@ namespace T16CodBackEnd.Classes
 {
     public class PessoaFisica : Pessoa, IPessoaFisica
     {
-        public int cpf { get; set; }
+        public string? cpf { get; set; }
+
+        public string? logradouro { get; set; }
         public DateTime dataNasc { get; set; }
 
         public override float CalcularImposto(float rendimento)
