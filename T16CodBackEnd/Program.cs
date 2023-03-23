@@ -174,7 +174,7 @@
 
 // Fim do Encontro-Remoto-6
 
-// Encontro Remoto-7
+// Encontro Remoto-7 e Encontro-Remoto-8
 
 using T16CodBackEnd.Classes;
 
@@ -244,6 +244,8 @@ do
                 {
                     //metodo construtor
                     case "1":
+
+
                         PessoaFisica novaPF = new PessoaFisica();
                         Endereco novoEndPf = new Endereco();
 
@@ -309,6 +311,18 @@ do
 
                         listaPf.Add(novaPF);
 
+                        //StreamWriter sw = new StreamWriter(novaPF.nome);
+                        //sw.WriteLine(novaPF.nome);
+                        //sw.Close();
+
+                        using (StreamWriter sw = new StreamWriter($"arquivo-{novaPF.nome}.txt"))
+                        {
+                            sw.WriteLine(novaPF.nome);
+
+                        }
+
+
+
                         Console.WriteLine($"Objetivo adicionado na lista");
                         Thread.Sleep(3000);
 
@@ -348,6 +362,22 @@ do
                             Console.Clear();
                         }
 
+                        using (StreamReader sr = new StreamReader("arquivo-Flavio.txt"))
+                        {
+
+                            string? linha;
+                            while ((linha = sr.ReadLine()) != null)
+                            {
+                                Console.WriteLine($"{linha}");
+
+                            }
+
+                            Console.WriteLine($"Tecle 'Enter' para continuar");
+                            Console.ReadLine();
+
+                        }
+
+
                         break;
 
                     case "0":
@@ -374,29 +404,27 @@ do
             break;
 
         case "2":
-            System.Console.WriteLine($"Pessoa Jurídica Selecionada");
+            Console.WriteLine($"Pessoa Jurídica Selecionada");
 
             PessoaJuridica novaPj = new PessoaJuridica();
             Endereco novoEndPj = new Endereco();
 
-            novaPj.razaoSocial = "Flavio Machado - ME";
-            novaPj.cnpj = "31.876.411/0001-79";
-            novaPj.rendimento = 200000.00f;
+                        List<PessoaJuridica> ListaPj = metodosPj.LerArquivo();
 
-            novoEndPj.logradouro = "Rua Copacabana";
-            novoEndPj.numero = 354;
-            novoEndPj.complemento = "Empresa de Informática";
-            novoEndPj.endComercial = true;
+            foreach (var cadaItem in ListaPj)
+            {
+                Console.WriteLine(@$"
 
-            Console.WriteLine(@$"
-
-// Nome da Razão Social: {novaPj.razaoSocial}
-// Endereço: {novoEndPj.logradouro}, {novoEndPj.numero}
-// CNPJ: {novaPj.cnpj} - Valido: {novaPj.ValidarCnpj(novaPj.cnpj)} 
-// ");
-
-            Console.WriteLine($"Tecle 'Enter' para continuar!");
-            Console.ReadLine();
+                            Nome: {cadaItem.nome}
+                            Razão Social: {cadaItem.razaoSocial}
+                            CNPJ: {cadaItem.cnpj}
+                           
+                            ");
+                Console.WriteLine($"Tecle 'Enter' para continuar");
+                Console.ReadLine();
+                Console.Clear();
+                
+            }
             break;
 
         case "0":
